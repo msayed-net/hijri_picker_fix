@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: new ThemeData(
           primaryColor: Colors.brown,
-          brightness: Brightness.dark, 
+          brightness: Brightness.dark,
           colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.green),
         ),
         home: MyHomePage(title: "Umm Alqura Calendar"));
@@ -59,11 +59,11 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               new Text(
                 '${selectedDate.toString()}',
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
               new Text(
                 '${selectedDate.fullDate()}',
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
             ],
           ),
